@@ -1,0 +1,49 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (7.0.3.1)
+      activesupport (= 7.0.3.1)
+    activerecord (7.0.3.1)
+      activemodel (= 7.0.3.1)
+      activesupport (= 7.0.3.1)
+    activesupport (7.0.3.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    composite_primary_keys (14.0.4)
+      activerecord (~> 7.0.2)
+    concurrent-ruby (1.1.10)
+    data-anonymization (0.8.7)
+      activerecord (~> 7.0)
+      activesupport (~> 7.0)
+      composite_primary_keys (~> 14.0)
+      parallel (~> 1.21)
+      powerbar (~> 2.0)
+      rgeo (~> 2.3)
+      rgeo-geojson (~> 2.1)
+      thor (~> 1.1)
+    hashie (5.0.0)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.16.2)
+    parallel (1.22.1)
+    powerbar (2.0.1)
+      hashie (>= 1.1.0)
+    rgeo (2.4.0)
+    rgeo-geojson (2.1.1)
+      rgeo (>= 1.0.0)
+    sqlite3 (1.4.4)
+    thor (1.2.1)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
+
+PLATFORMS
+  x86_64-darwin-20
+
+DEPENDENCIES
+  data-anonymization
+  sqlite3
+
+BUNDLED WITH
+   2.3.5
