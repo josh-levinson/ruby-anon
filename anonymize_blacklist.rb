@@ -5,7 +5,17 @@ require 'pg'
 
 DataAnon::Utils::Logging.logger.level = Logger::INFO
 
-database 'parvati_development' do
+# TODO: Break horribly if run in production
+# if ARGV.length > 1
+#   puts "Wrong number of arguments, got #{ARGV.length}, expected 0 or 1"
+#   exit
+# end
+
+# Select environment, development by default
+# environment = ARGV[0] || 'development'
+
+
+database "parvati" do
   strategy DataAnon::Strategy::Blacklist
   source_db adapter: 'postgresql',
             host: ENV['DATABASE_HOST'] || 'db',
